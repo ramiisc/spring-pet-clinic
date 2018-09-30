@@ -1,0 +1,5 @@
+com\rpotluru\springpetclinic\model\PetType.class
+com\rpotluru\springpetclinic\model\Owner.class
+com\rpotluru\springpetclinic\model\Person.class
+com\rpotluru\springpetclinic\model\Pet.class
+com\rpotluru\springpetclinic\model\Vet.class
