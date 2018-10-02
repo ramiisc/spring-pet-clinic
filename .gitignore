@@ -27,3 +27,15 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+
+/log/
+/target/
+
+*.jar
+*.war
+*.ear
+*.db
+/bin/
+/deploy/
+!.mvn/wrapper/maven-wrapper.jar
