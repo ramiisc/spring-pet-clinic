@@ -1,4 +1,4 @@
-/target/
+*/target/*
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
@@ -10,8 +10,7 @@
 .springBeans
 .sts4-cache
 *.jar
-/release/
-/target/
+*/release/*
 .gitignore
 *.class
 ### IntelliJ IDEA ###
@@ -30,12 +29,10 @@
 
 
 /log/
-/target/
 
-*.jar
 *.war
 *.ear
 *.db
 /bin/
 /deploy/
-!.mvn/wrapper/maven-wrapper.jar
+
