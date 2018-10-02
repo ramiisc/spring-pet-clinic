@@ -9,7 +9,11 @@
 .settings
 .springBeans
 .sts4-cache
-
+*.jar
+/release/
+/target/
+.gitignore
+*.class
 ### IntelliJ IDEA ###
 .idea
 *.iws
