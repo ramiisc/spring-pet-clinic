@@ -1,6 +1,6 @@
 package com.rpotluru.springpetclinic.model;
 
-public class Specialty extends BaseEntity{
+public class Speciality extends BaseEntity{
 	
 	private String description;
 
@@ -11,6 +11,13 @@ public class Specialty extends BaseEntity{
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+	@Override
+	public String toString() {
+		return "Speciality [description=" + description + "]";
+	}
+	
+	
 	
 
 }

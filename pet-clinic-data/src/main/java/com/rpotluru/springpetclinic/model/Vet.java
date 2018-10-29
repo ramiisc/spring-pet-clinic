@@ -3,6 +3,7 @@
  */
 package com.rpotluru.springpetclinic.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -11,14 +12,20 @@ import java.util.Set;
  */
 public class Vet extends Person {
 	
-	private Set<Specialty> Specialties;
+	private Set<Speciality> Specialities = new HashSet<>();
 
-	public Set<Specialty> getSpecialties() {
-		return Specialties;
+	public Set<Speciality> getSpecialities() {
+		return Specialities;
 	}
 
-	public void setSpecialties(Set<Specialty> specialties) {
-		Specialties = specialties;
+	public void setSpecialities(Set<Speciality> specialities) {
+		Specialities = specialities;
+	}
+
+	@Override
+	public String toString() {
+		return "Vet [Specialities=" + Specialities + ", getFirstName()=" + getFirstName() + ", getLastName()="
+				+ getLastName() + "]";
 	}
 	
 	
