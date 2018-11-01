@@ -24,4 +24,9 @@ public class OwnerController {
 
 	}
 
+	@RequestMapping({"find","/find"})
+	public String find() {
+		return "notImplemented";
+		
+	}
 }
