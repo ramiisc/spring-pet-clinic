@@ -10,25 +10,25 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="visits")
+@Table(name = "visits")
 public class Visit extends BaseEntity {
 
-	@Column(name="data")
-	private LocalDate birthDate;
-	
-	@Column(name="description")
+	@Column(name = "data")
+	private LocalDate date;
+
+	@Column(name = "description")
 	private String description;
-	
+
 	@ManyToOne
-	@JoinColumn(name="pet_id")
+	@JoinColumn(name = "pet_id")
 	private Pet pet;
 
-	public LocalDate getBirthDate() {
-		return birthDate;
+	public LocalDate getDate() {
+		return date;
 	}
 
-	public void setBirthDate(LocalDate birthDate) {
-		this.birthDate = birthDate;
+	public void setDate(LocalDate date) {
+		this.date = date;
 	}
 
 	public String getDescription() {
