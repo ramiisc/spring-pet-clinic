@@ -3,10 +3,15 @@ package com.rpotluru.springpetclinic.services;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
 import com.rpotluru.springpetclinic.model.PetType;
 import com.rpotluru.springpetclinic.model.Vet;
 import com.rpotluru.springpetclinic.repositories.PetTypeRepository;
 
+@Service
+@Profile("springDataJpa")
 public class PetTypeServiceImpl implements PetTypeService {
 
 	private final PetTypeRepository petTypeRepository;
@@ -24,7 +29,6 @@ public class PetTypeServiceImpl implements PetTypeService {
 	@Override
 	public PetType save(PetType object) {
 		return petTypeRepository.save(object);
-		;
 	}
 
 	@Override
